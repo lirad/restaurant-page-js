@@ -1,35 +1,43 @@
 import "./style.css"
 import { hero } from "./modules/hero"
 import { tabs } from "./modules/tabs"
-import heroImage from './images/8bit-burguer.jpg'
+import { menu } from "./modules/menu"
+
 
 const CURRENT_URL = new URL(window.location);
 
-document.addEventListener("DOMContentLoaded", function () {
-    checkForUrl();
-    tabsLogic();
-    let navEl = document.getElementsByName('nav')
-    navEl.forEach(
-        (item) => item.addEventListener('click', () => tabsLogic())
-    )
-});
+const initialize = () => {
+    document.addEventListener("DOMContentLoaded", function () {
+        checkForUrl();
+        tabsLogic();
+        listenHashChange();
+        loadNav();
+    });
+}
+
+const loadNav = () => document.querySelector('.nav').innerHTML = tabs();
+
 
 const tabsLogic = () => {
+    
     let div = document.querySelector('.content');
-    switch (window.location.hash) {
+    let stage = new URL(window.location.hash);
+    switch (stage.hash) {
         case "#home":
-            console.log('home')
             div.innerHTML = hero();
-            document.querySelector('.flex.flex-col.p-5.justify-center').innerHTML += tabs();
             break;
         case "#menu":
-            console.log('menu')
-            div.innerHTML = '<p>Menu</p>';
+            div.innerHTML = menu();
             break;
         case "#contact":
-            console.log('contact')
             div.innerHTML = '<p>Contact</p>';
             break;
+    }
+}
+
+const listenHashChange = () => {
+    window.onhashchange = function () {
+        tabsLogic();
     }
 }
 
@@ -38,3 +46,6 @@ const checkForUrl = () => {
         window.location.hash = "#home"
     }
 }
+
+
+initialize();

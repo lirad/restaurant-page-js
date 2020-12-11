@@ -1,6 +1,6 @@
 const hero = () => {
     let html = `
-    <div id="hero" class="h-screen  bg-gray-500 flex justify-center items-center align-middle relative">
+    <div id="hero" class="h-screen bg-gray-500 flex justify-center items-center align-middle relative">
         <div class="container">
             <div class="flex flex-col p-5 justify-center">
                 <div>
