@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+    background: url("/dist/0549003546f2651046b635feb25b02e0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
