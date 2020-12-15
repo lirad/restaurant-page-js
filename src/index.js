@@ -1,4 +1,4 @@
-import './style.css';
+import './tailwind.css';
 import hero from './modules/hero';
 import tabs from './modules/tabs';
 import menu from './modules/menu';
