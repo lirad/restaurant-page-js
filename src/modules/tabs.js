@@ -10,7 +10,7 @@ const tabs = () => {
 
     nav.forEach((item) => (
         navHtml.push(
-            `<li class="p-5 nav">
+            `<li class="p-5 nav text-lg md:text-2xl">
                 <a href=${item.nav} class="font-mono hover:underline underline" name="nav"> ${item.label} </a>
             </li>`)
     ))

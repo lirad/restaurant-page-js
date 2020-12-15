@@ -2,6 +2,7 @@ import "./style.css"
 import { hero } from "./modules/hero"
 import { tabs } from "./modules/tabs"
 import { menu } from "./modules/menu"
+import contact from "./modules/contact"
 
 
 const CURRENT_URL = new URL(window.location);
@@ -10,7 +11,7 @@ const initialize = () => {
     document.addEventListener("DOMContentLoaded", function () {
         checkForUrl();
         tabsLogic();
-        listenHashChange();
+        urlListnerChanges();
         loadNav();
     });
 }
@@ -19,7 +20,6 @@ const loadNav = () => document.querySelector('.nav').innerHTML = tabs();
 
 
 const tabsLogic = () => {
-    
     let div = document.querySelector('.content');
     let stage = new URL(window.location.hash);
     switch (stage.hash) {
@@ -30,12 +30,12 @@ const tabsLogic = () => {
             div.innerHTML = menu();
             break;
         case "#contact":
-            div.innerHTML = '<p>Contact</p>';
+            div.innerHTML = contact();
             break;
     }
 }
 
-const listenHashChange = () => {
+const urlListnerChanges = () => {
     window.onhashchange = function () {
         tabsLogic();
     }
