@@ -1,4 +1,4 @@
-const tabs = () => {
+const tabs = (active) => {
 
     let nav = [
         { label: 'Home', nav: '#home' },
@@ -11,14 +11,15 @@ const tabs = () => {
     nav.forEach((item) => (
         navHtml.push(
             `<li class="p-5 nav text-lg md:text-2xl">
-                <a href=${item.nav} class="font-mono hover:underline underline" name="nav"> ${item.label} </a>
+                <a href=${item.nav} class="font-mono hover:underline ${window.location.hash === item.nav ? "text-green-400 underline" : null }" > ${item.label} </a>
             </li>`)
     ))
 
+
     let html =
     `
-    <div class="w-11/12 mx-auto text-white top-0">
-        <ul class="text-white flex justify-center">
+    <div class="w-11/12 mx-auto text-white  top-0">
+        <ul class="flex justify-center">
             ${navHtml.join('')}
         </ul>
     </div>

@@ -22,6 +22,7 @@ const loadNav = () => document.querySelector('.nav').innerHTML = tabs();
 const tabsLogic = () => {
     let div = document.querySelector('.content');
     let stage = new URL(window.location.hash);
+    loadNav();
     switch (stage.hash) {
         case "#home":
             div.innerHTML = hero();
