@@ -2,11 +2,11 @@ const menu = () => {
 
     let menu = [
         { name: '8-bit Burger', price: '$ 9.80', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg' },
-        { name: '8-bit Burger', price: '$ 9.80', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' },
-        { name: '8-bit Burger', price: '$ 9.80', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1251198/pexels-photo-1251198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' },
-        { name: '8-bit Burger', price: '$ 9.80', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg' },
-        { name: '8-bit Burger', price: '$ 9.80', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg' },
-        { name: '8-bit Burger', price: '$ 9.80', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }
+        { name: '8-bit Burger', price: '$ 10.80', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' },
+        { name: '8-bit Burger', price: '$ 7.80', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1251198/pexels-photo-1251198.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' },
+        { name: '8-bit Burger', price: '$ 9.12', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg' },
+        { name: '8-bit Burger', price: '$ 15.4', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg' },
+        { name: '8-bit Burger', price: '$ 8.74', description: 'Lorem ipsum dolor est quest', picture: 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }
     ]
 
     let itemHtml = [];
