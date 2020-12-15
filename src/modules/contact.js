@@ -1,9 +1,8 @@
 const contact = () => {
-
-    let html = `
+  const html = `
         <div id="menu" class="h-autoflex justify-center items-center align-middle relative" >
             
-            <div class="container">
+            <div class="container mx-auto">
                 <h2 class="text-white text-xl text-center mt-12">Contact us</h2>
                 <div class="flex flex-col">
                     <form class="w-8/12 mx-auto mt-2 flex flex-col justify-between">
@@ -40,9 +39,9 @@ const contact = () => {
                 </div>
             </div>
         </div>
-    `
-    
-    return html
-}
+    `;
 
-export default contact 
+  return html;
+};
+
+export default contact;

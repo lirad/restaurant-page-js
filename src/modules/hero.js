@@ -1,5 +1,5 @@
 const hero = () => {
-    let html = `
+  const html = `
     <div id="hero" class="h-screen bg-gray-500 flex justify-center items-center align-middle relative">
         <div class="container">
             <div class="flex flex-col p-5 justify-center">
@@ -11,9 +11,8 @@ const hero = () => {
                 </div>
             </div>
         </div>
-    </div>`
-    console.log('test')
-    return html
-}
+    </div>`;
+  return html;
+};
 
-export { hero }
+export default hero;

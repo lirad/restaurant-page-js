@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src') + '/index.js',
+  entry: `${path.resolve(__dirname, 'src')}/index.js`,
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -14,10 +14,10 @@ module.exports = {
         use: [
           'style-loader',
           {
-            loader: 'css-loader', options: { importLoaders: 1 }
+            loader: 'css-loader', options: { importLoaders: 1 },
           },
-          'postcss-loader'
-        ]
+          'postcss-loader',
+        ],
       },
       {
         test: /\.(png|jpg|gif)$/i,
@@ -31,7 +31,7 @@ module.exports = {
           },
         ],
       },
-    ]
+    ],
   },
 
-}; 
+};
